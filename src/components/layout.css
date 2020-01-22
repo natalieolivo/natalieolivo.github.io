@@ -22,6 +22,49 @@ section,
 summary {
   display: block;
 }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.gatsby-image-wrapper {
+  width: 40px;
+}
+
+.feature-sections {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2em 0;
+  background: #fff;
+  width: 100%;
+}
+
+.social-links-section {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 2em;
+  position: absolute;
+  right: 50px;
+}
+
+.social-links {
+  margin: 0 0.25em;
+}
+
+.svg {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1em;
+}
+
 audio,
 canvas,
 progress,

@@ -11,6 +11,11 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import styled from "styled-components"
+
+const ContentWell = styled.main`
+  padding: 8em;
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,11 +39,10 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <ContentWell>{children}</ContentWell>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Natalie K. Olivo
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
     </>
