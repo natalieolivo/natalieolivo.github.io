@@ -4,8 +4,6 @@ import React from "react"
 import SVGGithub from "./svgs/svg-git"
 import SVGLinkedIn from "./svgs/svg-linkedin"
 import SVGTwitter from "./svgs/svg-twitter"
-import Image from "../components/image"
-import HeaderLogo from "../images/sunmoon.png"
 import styled from "styled-components"
 
 const ShadowedHeader = styled.header`
@@ -16,11 +14,24 @@ const ShadowedHeader = styled.header`
     font-family: Georgia, Serif;
     margin: 0.5em;
   }
+
+  span {
+    font-size: 0.75em;
+  }
+
+  @media (max-width: 450px) {
+    span {
+      display: block;
+      line-height: 2em;
+    }
+  }
 `
 
 const Header = ({ siteTitle }) => (
   <ShadowedHeader>
-    <h2>The Mode of Code - Natalie Olivo</h2>
+    <h2>
+      The Mode of Code <span>(with Natalie Olivo)</span>
+    </h2>
     <section className="social-links-section">
       <a
         className="social-links"

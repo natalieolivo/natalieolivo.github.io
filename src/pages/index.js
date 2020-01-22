@@ -3,8 +3,8 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import SVGHeadphone from "../components/svgs/svg-headphone"
-import SVGBold from "../components/svgs/svg-bold"
 import styled from "styled-components"
+import BlogFeed from "../components/blogfeed"
 
 const UnderlinedHeader = styled.h3`
   font-family: Georgia, Serif;
@@ -17,13 +17,12 @@ const FeatureApp = styled.div`
   cursor: pointer;
   text-align: center;
   opacity: 0.8;
-  margin: 0 2em;
   width: 50em;
   height: 15em;
   border: solid 1px #999;
 
   &:hover {
-    background: rgb(42, 33, 46);
+    background: rgb(75, 50, 86);
     color: #fff;
     opacity: 1;
     transition: opacity 600ms ease-in-out;
@@ -38,8 +37,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <UnderlinedHeader>Recent Blogs:</UnderlinedHeader>
-
     <UnderlinedHeader>Recent Projects:</UnderlinedHeader>
     <section className="feature-sections">
       <FeatureApp>
@@ -52,6 +49,9 @@ const IndexPage = () => (
         <SVGBold />
       </section> */}
     </section>
+
+    <UnderlinedHeader>Recent Blogs:</UnderlinedHeader>
+    <BlogFeed />
   </Layout>
 )
 

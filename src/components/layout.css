@@ -40,9 +40,9 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 2em 0;
   background: #fff;
   width: 100%;
+  margin: 0 0 4em;
 }
 
 .social-links-section {
@@ -658,8 +658,12 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+  .svg {
+    width: 15%;
   }
 }

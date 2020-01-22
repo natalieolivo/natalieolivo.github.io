@@ -14,7 +14,7 @@ import "./layout.css"
 import styled from "styled-components"
 
 const ContentWell = styled.main`
-  padding: 8em;
+  padding: 8em 1em;
 `
 
 const Layout = ({ children }) => {

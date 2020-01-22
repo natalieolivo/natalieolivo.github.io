@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Natalie Olivo`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    icon: `./images/sunmoon.png`,
+    description: `My journey learning to navigate the world of code through various trials and errors`,
+    author: `@nolivo`,
+    icon: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,12 +26,6 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://medium.com/feed/nataliie`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
