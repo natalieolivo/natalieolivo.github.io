@@ -9,7 +9,7 @@ import HeaderLogo from "../images/sunmoon.png"
 import styled from "styled-components"
 
 const ShadowedHeader = styled.header`
-  background: #fff;
+  background: #efdede;
   box-shadow: 0.05em 0.05em 0.25em 0.05em rgba(0, 0, 0, 0.4);
 
   h2 {
