@@ -12,6 +12,17 @@ const UnderlinedHeader = styled.h3`
 const FeatureLink = styled.a`
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
+  max-width: 100%;
+  width: 100%;
+`
+
+const FeatureSection = styled.section`
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #fff;
+  width: 100%;
+  margin: 0 0 4em;
 `
 
 const FeatureApp = styled.div`
@@ -21,7 +32,6 @@ const FeatureApp = styled.div`
   cursor: pointer;
   text-align: center;
   opacity: 0.8;
-  width: 50em;
   height: 15em;
   border: solid 1px #999;
 
@@ -42,7 +52,7 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <UnderlinedHeader>Recent Projects:</UnderlinedHeader>
-    <section className="feature-sections">
+    <FeatureSection>
       <FeatureLink href="https://harmonyfe.herokuapp.com/">
         <FeatureApp>
           <h2>Harmony</h2> - Using speech to text recognition web api to
@@ -54,7 +64,7 @@ const IndexPage = () => (
         Harlem Scrabble - Scrabble with an interesting twist
         <SVGBold />
       </section> */}
-    </section>
+    </FeatureSection>
 
     <UnderlinedHeader>Recent Blogs:</UnderlinedHeader>
     <BlogFeed />
