@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import SVGHeadphone from "../components/svgs/svg-headphone"
 import styled from "styled-components"
@@ -10,6 +9,11 @@ const UnderlinedHeader = styled.h3`
   font-family: Georgia, Serif;
   text-decoration: underline;
 `
+const FeatureLink = styled.a`
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+`
+
 const FeatureApp = styled.div`
   border-radius: 5px;
   background: #fff;
@@ -39,11 +43,13 @@ const IndexPage = () => (
 
     <UnderlinedHeader>Recent Projects:</UnderlinedHeader>
     <section className="feature-sections">
-      <FeatureApp>
-        <h2>Harmony</h2> - Using speech to text recognition web api to aggregate
-        related content
-        <SVGHeadphone />
-      </FeatureApp>
+      <FeatureLink href="https://harmonyfe.herokuapp.com/">
+        <FeatureApp>
+          <h2>Harmony</h2> - Using speech to text recognition web api to
+          aggregate related content
+          <SVGHeadphone />
+        </FeatureApp>
+      </FeatureLink>
       {/* <section class="feature-app">
         Harlem Scrabble - Scrabble with an interesting twist
         <SVGBold />
